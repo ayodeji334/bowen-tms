@@ -1,24 +1,22 @@
-import VueRouter from 'vue-router'
-import Login from '@/views/Login.vue'
-import StaffLogin from '@/views/StaffLogin.vue'
+import { createRouter, createWebHistory } from 'vue-router'
+import Login from '../views/Login.vue'
 
 const routes = [
   {
     path: '/',
-    name: 'student-login',
-    component: Login,
+    name: 'Home',
+    component: Login
   },
   {
     path: '/staff',
-    name: 'staff-login',
-    component: StaffLogin,
+    name: 'StaffLogin',
+    component: () => import('../views/StaffLogin.vue')
   }
-  
-];
+]
 
-const router = VueRouter.createRouter({
-  history: VueRouter.createWebHashHistory(),
-  routes,
+const router = createRouter({
+  history: createWebHistory(process.env.BASE_URL),
+  routes
 })
 
 export default router

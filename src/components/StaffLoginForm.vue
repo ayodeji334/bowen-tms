@@ -11,7 +11,7 @@
                   leading-tight text-sm focus:outline-none placeholder-gray-400 focus:shadow-outline"
               id="username" 
               type="text" 
-              placeholder="Enter your username"
+              placeholder="Enter your StaffId"
           />
         </div>
         <div class="mb-4 text-left">
