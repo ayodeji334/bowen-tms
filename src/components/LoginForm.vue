@@ -33,18 +33,10 @@
           <button 
           :disabled="loading"
           :class="{'opacity-75 bg-purple-800': loading}"
-          class="w-full shadow-md bg-purple-800 text-white ring-4 ring-purple-800
-          font-bold py-4 px-4 rounded-lg focus:outline-none focus:shadow-outline" 
+          class="w-full shadow-md bg-purple-800 text-white ring-3 ring-purple-800
+          font-medium py-3 px-4 rounded-lg focus:outline-none focus:shadow-outline" 
           type="submit"> 
-              <c-spinner
-              thickness="2px"
-              speed="0.65s"
-              empty-color="#ffffff"
-              color="vue.100"
-              size="sm"
-              v-if="loading"
-              />
-              &nbsp; Login
+            Login
           </button>
       </div> 
     </form>
